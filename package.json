@@ -1,0 +1,24 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "nbr-programming": "~1.0.4",
+        "node-red-contrib-aws": "~0.5.0",
+        "node-red-contrib-chatbot": "~0.19.7",
+        "node-red-contrib-chatbot-discord": "~1.0.2",
+        "node-red-contrib-face-recognition": "~1.3.3",
+        "node-red-contrib-facial-recognition": "~0.29.105",
+        "node-red-contrib-jsontohtml": "^1.0.2",
+        "node-red-contrib-light-scheduler": "0.0.16",
+        "node-red-contrib-minecraft-ping": "^0.1.0",
+        "node-red-contrib-opentimestamps": "0.0.7",
+        "node-red-contrib-pythonshell": "~1.5.4",
+        "node-red-contrib-ui-time-scheduler": "~1.5.2",
+        "node-red-contrib-web-page-screenshot": "~0.2.1",
+        "node-red-dashboard": "^2.26.2",
+        "node-red-my-chatbot-out": "0.0.3",
+        "node-red-node-webdav": "~0.2.0"
+    }
+}
