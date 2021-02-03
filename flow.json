@@ -116,7 +116,7 @@
         },
         "site": {
             "name": "Welcome to Autre TechLab Mincraft Services",
-            "hideToolbar": "false",
+            "hideToolbar": "true",
             "allowSwipe": "true",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
@@ -289,6 +289,13 @@
         "profileFields": "first_name,last_name"
     },
     {
+        "id": "4cf44106.6f32f8",
+        "type": "chatbot-context-store",
+        "name": "",
+        "contextStorage": "plain-file",
+        "contextParams": "{\"path\":\"/tmp\"}"
+    },
+    {
         "id": "73dc9105.eb3818",
         "type": "chatbot-discord-node",
         "botname": "MondeDeSora_Bot",
@@ -299,14 +306,7 @@
         "debug": true
     },
     {
-        "id": "4cf44106.6f32f8",
-        "type": "chatbot-context-store",
-        "name": "",
-        "contextStorage": "plain-file",
-        "contextParams": "{\"path\":\"/tmp\"}"
-    },
-    {
-        "id": "859d11bc.076d9",
+        "id": "6f2ad847.2e845",
         "type": "ui_spacer",
         "name": "spacer",
         "group": "df038176.cdeed8",
@@ -1254,7 +1254,7 @@
         "type": "debug",
         "z": "2a099374.9a2dac",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1533,8 +1533,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 100,
-        "y": 220,
+        "x": 140,
+        "y": 240,
         "wires": [
             [
                 "c389e088.b5817"

@@ -2,7 +2,10 @@
     "name": "atl_chatbot",
     "description": "AI Chatbot for Autre techlab",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-minecraft-ping": "0.1.0",
+        "node-red-dashboard": "2.27.0"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
