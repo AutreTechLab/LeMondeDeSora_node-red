@@ -4,7 +4,8 @@
     "version": "0.0.1",
     "dependencies": {
         "node-red-contrib-minecraft-ping": "0.1.0",
-        "node-red-dashboard": "2.27.0"
+        "node-red-dashboard": "2.27.0",
+        "node-red-contrib-chatbot-discord": "1.0.2"
     },
     "node-red": {
         "settings": {

@@ -1,12 +1,5 @@
 [
     {
-        "id": "67f1483c.ddf8d",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "f6879d6c.3df81",
         "type": "tab",
         "label": "Flow - Hello World",
@@ -278,24 +271,6 @@
         "collapse": true
     },
     {
-        "id": "77e2200e.124ad",
-        "type": "chatbot-facebook-node",
-        "botname": "",
-        "usernames": "",
-        "store": "",
-        "log": "",
-        "debug": false,
-        "multiWebHook": false,
-        "profileFields": "first_name,last_name"
-    },
-    {
-        "id": "4cf44106.6f32f8",
-        "type": "chatbot-context-store",
-        "name": "",
-        "contextStorage": "plain-file",
-        "contextParams": "{\"path\":\"/tmp\"}"
-    },
-    {
         "id": "73dc9105.eb3818",
         "type": "chatbot-discord-node",
         "botname": "MondeDeSora_Bot",
@@ -313,6 +288,24 @@
         "order": 1,
         "width": 13,
         "height": 1
+    },
+    {
+        "id": "77e2200e.124ad",
+        "type": "chatbot-facebook-node",
+        "botname": "",
+        "usernames": "",
+        "store": "",
+        "log": "",
+        "debug": false,
+        "multiWebHook": false,
+        "profileFields": "first_name,last_name"
+    },
+    {
+        "id": "4cf44106.6f32f8",
+        "type": "chatbot-context-store",
+        "name": "",
+        "contextStorage": "plain-file",
+        "contextParams": "{\"path\":\"/tmp\"}"
     },
     {
         "id": "9244c093.ccefd",
@@ -1166,8 +1159,8 @@
         "server": "f11838f3.8b9978",
         "userid": "",
         "do_not_ping": false,
-        "x": 320,
-        "y": 140,
+        "x": 300,
+        "y": 100,
         "wires": [
             [
                 "aa77ea69.e672b"
@@ -1222,7 +1215,7 @@
         "type": "minecraft-ping",
         "z": "c4618a05.51826",
         "server": "f11838f3.8b9978",
-        "x": 310,
+        "x": 290,
         "y": 200,
         "wires": [
             [
@@ -1534,8 +1527,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 240,
+        "x": 80,
+        "y": 200,
         "wires": [
             [
                 "c389e088.b5817",
