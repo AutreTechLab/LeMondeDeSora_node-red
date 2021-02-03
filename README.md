@@ -4,10 +4,10 @@ Le Monde de Sora Minecraft Roleplay Server - Node-Red automations
 
 # Installation:
 ## Install nodejs and node-red 
-`sudo apt update`
-`sudo apt install nodejs`
-`sudo apt install npm`
-`sudo npm install -g --unsafe-perm node-red`
+* `sudo apt update`
+* `sudo apt install nodejs`
+* `sudo apt install npm`
+* `sudo npm install -g --unsafe-perm node-red`
 
 ## Install local mosquitto broker 
 ### About mosquitto
@@ -20,8 +20,8 @@ This will implement a local mqtt-broker for the node-red flows. After installtio
 
 ### Installation steps on ubuntu 20.04
 
-`sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa`
-`sudo apt-get update`
-`sudo apt-get install mosquitto`
-`sudo apt-get install mosquitto-clients`
-`sudo apt clean`
+* `sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa`
+* `sudo apt-get update`
+* `sudo apt-get install mosquitto`
+* `sudo apt-get install mosquitto-clients`
+* `sudo apt clean`
