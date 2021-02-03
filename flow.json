@@ -109,7 +109,7 @@
             },
             "angularTheme": {
                 "primary": "indigo",
-                "accents": "blue",
+                "accents": "green",
                 "warn": "red",
                 "background": "grey"
             }
@@ -1179,7 +1179,7 @@
         "type": "debug",
         "z": "c4618a05.51826",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1187,8 +1187,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 730,
-        "y": 140,
+        "x": 850,
+        "y": 180,
         "wires": []
     },
     {
@@ -1228,7 +1228,8 @@
             [
                 "95c80b9d.acd028",
                 "df26eb0.73f1d18",
-                "f45a8c3d.b7adb"
+                "f45a8c3d.b7adb",
+                "fb4593e.7dd887"
             ]
         ]
     },
@@ -1237,7 +1238,7 @@
         "type": "debug",
         "z": "c4618a05.51826",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1335,12 +1336,13 @@
         "arraySplt": 1,
         "arraySpltType": "len",
         "stream": false,
-        "addname": "user",
+        "addname": ".user",
         "x": 530,
         "y": 140,
         "wires": [
             [
-                "68dcdd4c.90f21c"
+                "77d971e4.94ac58",
+                "69106508.480764"
             ]
         ]
     },
@@ -1380,8 +1382,8 @@
             "#c5b0d5"
         ],
         "outputs": 1,
-        "x": 680,
-        "y": 340,
+        "x": 740,
+        "y": 440,
         "wires": [
             []
         ]
@@ -1414,8 +1416,7 @@
         "y": 380,
         "wires": [
             [
-                "f1fd01fe.176c3",
-                "fb4593e.7dd887"
+                "f1fd01fe.176c3"
             ]
         ]
     },
@@ -1537,8 +1538,71 @@
         "y": 240,
         "wires": [
             [
-                "c389e088.b5817"
+                "c389e088.b5817",
+                "7ce01ab9.06af0c"
             ]
         ]
+    },
+    {
+        "id": "ef43b189.d5afb",
+        "type": "ui_text",
+        "z": "c4618a05.51826",
+        "group": "2238b8ca.5fac08",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Players:",
+        "format": "{{msg.payload.name}}",
+        "layout": "col-center",
+        "x": 920,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "77d971e4.94ac58",
+        "type": "join",
+        "z": "c4618a05.51826",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload.name",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "<br>",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 720,
+        "y": 80,
+        "wires": [
+            [
+                "ef43b189.d5afb",
+                "68dcdd4c.90f21c"
+            ]
+        ]
+    },
+    {
+        "id": "69106508.480764",
+        "type": "debug",
+        "z": "c4618a05.51826",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "parts",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 140,
+        "wires": []
     }
 ]
