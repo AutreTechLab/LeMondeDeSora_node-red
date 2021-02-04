@@ -25,3 +25,17 @@ This will implement a local mqtt-broker for the node-red flows. After installtio
 * `sudo apt-get install mosquitto`
 * `sudo apt-get install mosquitto-clients`
 * `sudo apt clean`
+
+# Configure the python environment
+## Approach
+For our projects, we would like to be able to execute python scripts from node-red. After testing several options, we decided to go for  
+`node-red-contrib-pythonshell`. It allows us to maintain and test the code outside of node-red, which gives the flexibility to keep the code within the node-red project or maintain it in separate git repositories. 
+Input to the node will become the argument for the python script, output of the script will be sent to output of the node. 
+## Creating a virtual environment 
+The `node-red-contrib-pythonshell` requires the use of a virtual environment, which is a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages. Here is an example of how to create a virtual environment under the node-red project.
+* `apt-get install python3-venv` (you need to install python3-venv when doing it for the first time)
+* `cd ~/.node-red/projects/<your project>`
+* `mkdir py-src` 
+* `python3 -m venv .`
+* `source ./bin/activate`
+Now you can install all the modules needed for your project. 
