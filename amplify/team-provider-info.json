@@ -1,0 +1,15 @@
+{
+  "prd": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-saasui-prd-92922-authRole",
+      "UnauthRoleArn": "arn:aws:iam::190449249644:role/amplify-saasui-prd-92922-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::190449249644:role/amplify-saasui-prd-92922-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-saasui-prd-92922-deployment",
+      "UnauthRoleName": "amplify-saasui-prd-92922-unauthRole",
+      "StackName": "amplify-saasui-prd-92922",
+      "StackId": "arn:aws:cloudformation:eu-central-1:190449249644:stack/amplify-saasui-prd-92922/4aa83510-6f70-11eb-bce1-0a32025e35d4",
+      "AmplifyAppId": "diqe9z66yggzf"
+    }
+  }
+}

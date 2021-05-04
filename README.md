@@ -1,13 +1,23 @@
 # Node-red services.autretechlab.cloud
 Le Monde de Sora Minecraft Roleplay Server - Node-Red automations
 
-
 # Installation:
 ## Install nodejs and node-red 
 * `sudo apt update`
 * `sudo apt install nodejs`
 * `sudo apt install npm`
 * `sudo npm install -g --unsafe-perm node-red`
+
+## Run node-red at system boot
+### Configuration of PM2
+PM2 is a process manager for Node.js. It makes it easy to run applications on boot and ensure they are restarted if necessary.
+* `sudo npm install -g pm2`
+Tell PM2 to run on boot
+* `pm2 startup systemd` 
+Remove (deinstall)init script via:
+* `pm2 unstartup systemd`
+
+-------------------------------------------------------------------
 
 ## Install local mosquitto broker 
 ### About mosquitto

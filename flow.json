@@ -1,5 +1,12 @@
 [
     {
+        "id": "7a4eb111.0c1c8",
+        "type": "tab",
+        "label": "Flow Robotics Ide",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "f6879d6c.3df81",
         "type": "tab",
         "label": "Flow - Hello World",
@@ -19,14 +26,6 @@
         "label": "Flow-LeMondeDe Sora UI",
         "disabled": false,
         "info": ""
-    },
-    {
-        "id": "7750c3c7.805eb4",
-        "type": "subflow",
-        "name": "Subflow 1",
-        "info": "",
-        "in": [],
-        "out": []
     },
     {
         "id": "99336c78.4c8ab",
@@ -102,14 +101,14 @@
             },
             "angularTheme": {
                 "primary": "indigo",
-                "accents": "green",
+                "accents": "blue",
                 "warn": "red",
                 "background": "grey"
             }
         },
         "site": {
-            "name": "Welcome to Autre TechLab Mincraft Services",
-            "hideToolbar": "true",
+            "name": "Welcome to Autre TechLab Services Admin UI",
+            "hideToolbar": "false",
             "allowSwipe": "true",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
@@ -208,10 +207,11 @@
         "id": "38e96ded.327fd2",
         "type": "ui_group",
         "name": "AutreTechLab",
-        "tab": "",
+        "tab": "c7773ab.19623c8",
+        "order": 3,
         "disp": true,
         "width": "6",
-        "collapse": false
+        "collapse": true
     },
     {
         "id": "80d5ecc0.146198",
@@ -255,7 +255,7 @@
     {
         "id": "ffdb88b2.2989b8",
         "type": "ui_tab",
-        "name": "AutreTechLab",
+        "name": "Minecraft Services",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -290,22 +290,52 @@
         "height": 1
     },
     {
-        "id": "77e2200e.124ad",
-        "type": "chatbot-facebook-node",
-        "botname": "",
-        "usernames": "",
-        "store": "",
-        "log": "",
-        "debug": false,
-        "multiWebHook": false,
-        "profileFields": "first_name,last_name"
-    },
-    {
         "id": "4cf44106.6f32f8",
         "type": "chatbot-context-store",
         "name": "",
         "contextStorage": "plain-file",
         "contextParams": "{\"path\":\"/tmp\"}"
+    },
+    {
+        "id": "8c10f895.751ef8",
+        "type": "config",
+        "name": "atl-services-node-red-flow",
+        "region": "eu-central-1"
+    },
+    {
+        "id": "7260a864.fdfae8",
+        "type": "git-nodes-config",
+        "name": "ATL_Robotics_IDE_Projects",
+        "git": ""
+    },
+    {
+        "id": "c7773ab.19623c8",
+        "type": "ui_tab",
+        "name": "Robitics IDE Services",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dc8b9f56.94918",
+        "type": "ui_group",
+        "name": "Actions",
+        "tab": "c7773ab.19623c8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "69f9cdfa.8a1fa4",
+        "type": "ui_group",
+        "name": "Diagnostics",
+        "tab": "c7773ab.19623c8",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
     },
     {
         "id": "9244c093.ccefd",
@@ -314,7 +344,7 @@
         "name": "",
         "label": "Daylight",
         "group": "e4b868dc.4bb848",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -465,7 +495,7 @@
         "name": "Outter Walls Height",
         "label": "Outter Walls Height",
         "group": "3e0dfd0b.2101e2",
-        "order": 2,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -489,7 +519,7 @@
         "name": "Inner Walls Height",
         "label": "Inner Walls Height",
         "group": "3e0dfd0b.2101e2",
-        "order": 4,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -513,7 +543,7 @@
         "z": "2a099374.9a2dac",
         "name": "",
         "group": "3e0dfd0b.2101e2",
-        "order": 3,
+        "order": 2,
         "width": 0,
         "height": 0,
         "gtype": "gage",
@@ -539,7 +569,7 @@
         "z": "2a099374.9a2dac",
         "name": "",
         "group": "3e0dfd0b.2101e2",
-        "order": 5,
+        "order": 4,
         "width": 0,
         "height": 0,
         "gtype": "gage",
@@ -996,7 +1026,7 @@
         "type": "ui_text",
         "z": "2a099374.9a2dac",
         "group": "8fb3768.b8ac088",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "name": "",
@@ -1015,6 +1045,8 @@
         "func": "msg.payload = \"player.getPos()\\n\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
         "x": 220,
         "y": 200,
         "wires": [
@@ -1028,7 +1060,7 @@
         "type": "debug",
         "z": "f6879d6c.3df81",
         "name": "",
-        "active": false,
+        "active": true,
         "console": "false",
         "complete": "payload",
         "x": 655,
@@ -1068,16 +1100,17 @@
         "id": "71429f10.8ebd6",
         "type": "tcp request",
         "z": "f6879d6c.3df81",
-        "server": "127.0.0.1",
+        "server": "sora.autretechlab.cloud",
         "port": "4711",
         "out": "char",
         "splitc": "\\n",
         "name": "",
-        "x": 342,
+        "x": 382,
         "y": 123,
         "wires": [
             [
-                "a9afe2c4.56502"
+                "a9afe2c4.56502",
+                "dd58ffe0.22a7"
             ]
         ]
     },
@@ -1089,6 +1122,8 @@
         "func": "var arr = msg.payload.toString().replace(/(\\n|\\r)+$/, '').split(\",\");\n\nvar x = parseInt(arr[0]);\nvar z = parseInt(arr[1]);\nvar y = parseInt(arr[2])\nvar cube_size = 3;\n\nvar coord_set = []\n  for (var h = x-cube_size; h < x+cube_size+1; h++) {\n      for (var k = z-cube_size; k < z+cube_size+1; k++) {\n          for (var l = y-cube_size; l < y+cube_size+1; l++) {\n              coord_set.push({payload: \"world.getBlock(\"+h+\",\"+k+\",\"+l+\")\\n\"});\n          }\n      }\n  }\nreturn [coord_set];",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
         "x": 476,
         "y": 189,
         "wires": [
@@ -1126,9 +1161,7 @@
         "x": 483,
         "y": 327,
         "wires": [
-            [
-                "dd58ffe0.22a7"
-            ]
+            []
         ]
     },
     {
@@ -1405,8 +1438,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 380,
+        "x": 540,
+        "y": 340,
         "wires": [
             [
                 "f1fd01fe.176c3"
@@ -1597,5 +1630,255 @@
         "x": 850,
         "y": 140,
         "wires": []
+    },
+    {
+        "id": "806fd151.8a3b4",
+        "type": "amazon cognito",
+        "z": "7a4eb111.0c1c8",
+        "aws": "8c10f895.751ef8",
+        "name": "",
+        "operation": "listUsers",
+        "x": 320,
+        "y": 160,
+        "wires": [
+            [
+                "ae229b6f.d10ff8",
+                "c92d3799.9ff108"
+            ]
+        ]
+    },
+    {
+        "id": "f659e895.95f5d8",
+        "type": "inject",
+        "z": "7a4eb111.0c1c8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "806fd151.8a3b4"
+            ]
+        ]
+    },
+    {
+        "id": "ae229b6f.d10ff8",
+        "type": "debug",
+        "z": "7a4eb111.0c1c8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a43955c0.497a78",
+        "type": "ui_button",
+        "z": "7a4eb111.0c1c8",
+        "name": "",
+        "group": "dc8b9f56.94918",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "ros2 launch ide_bringup ide.launch.py",
+        "tooltip": "Start the Robitics IDE service (ros2 launch)",
+        "color": "white",
+        "bgcolor": "red",
+        "icon": "",
+        "payload": "ros2 launch ide_bringup ide.launch.py",
+        "payloadType": "str",
+        "topic": "",
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "1195fdac.e9ba52"
+            ]
+        ]
+    },
+    {
+        "id": "4239fe62.16c6f",
+        "type": "ui_button",
+        "z": "7a4eb111.0c1c8",
+        "name": "",
+        "group": "dc8b9f56.94918",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ros2 run atl_blockly_ide_py_pkg atl_ide_webappserver_node",
+        "tooltip": "Start Robitics IDE Web server only",
+        "color": "white",
+        "bgcolor": "red",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 240,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd061f08.3879d",
+        "type": "ui_text",
+        "z": "7a4eb111.0c1c8",
+        "group": "69f9cdfa.8a1fa4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Running Robitics IDE services",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 610,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1195fdac.e9ba52",
+        "type": "pythonshell in",
+        "z": "7a4eb111.0c1c8",
+        "name": "ATL ROS2 Service status",
+        "pyfile": "/home/ubuntu/ATL_Robotics_IDE/saas_ops/atl_ros2_services.py",
+        "virtualenv": "/home/ubuntu/ATL_Robotics_IDE/saas_ops",
+        "continuous": false,
+        "stdInData": false,
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "63040ac3.c4a564",
+                "fd061f08.3879d",
+                "c92d3799.9ff108"
+            ]
+        ]
+    },
+    {
+        "id": "ecd8ccc4.06a14",
+        "type": "inject",
+        "z": "7a4eb111.0c1c8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ALL",
+        "payloadType": "str",
+        "x": 80,
+        "y": 260,
+        "wires": [
+            [
+                "a43955c0.497a78"
+            ]
+        ]
+    },
+    {
+        "id": "63040ac3.c4a564",
+        "type": "debug",
+        "z": "7a4eb111.0c1c8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c92d3799.9ff108",
+        "type": "ui_template",
+        "z": "7a4eb111.0c1c8",
+        "group": "69f9cdfa.8a1fa4",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>\nLALALALAL",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "x": 580,
+        "y": 440,
+        "wires": [
+            [
+                "dfc6cc91.4c724"
+            ]
+        ]
+    },
+    {
+        "id": "dfc6cc91.4c724",
+        "type": "debug",
+        "z": "7a4eb111.0c1c8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "7b6a3deb.92fd84",
+        "type": "ui_template",
+        "z": "c4618a05.51826",
+        "group": "e4b868dc.4bb848",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<script src=\"https://autretechlab.cloud/js/verifier.js\"></script>\n<script src=\"https://autretechlab.cloud/js/userprofile.js\"></script>\n<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "x": 1050,
+        "y": 400,
+        "wires": [
+            []
+        ]
     }
 ]

@@ -1,1 +1,11 @@
-{}
+{
+    "8c10f895.751ef8": {
+        "accessKey": "AKIASYV5I5VWE4DJHTMA",
+        "secretKey": "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",
+        "userPoolId": "eu-central-1_LZXd6oFRY"
+    },
+    "7260a864.fdfae8": {
+        "username": "autretechlab",
+        "useremail": "autretechlab@gmail.com"
+    }
+}
