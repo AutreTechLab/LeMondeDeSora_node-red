@@ -1,6 +1,6 @@
 {
     "name": "atl_chatbot",
-    "description": "AI Chatbot for Autre techlab",
+    "description": "autretechlab.cloud portal backend",
     "version": "0.0.1",
     "dependencies": {
         "aws-amplify": "^3.3.18",
