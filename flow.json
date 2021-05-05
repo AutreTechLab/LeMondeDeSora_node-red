@@ -31,36 +31,108 @@
         "id": "99336c78.4c8ab",
         "type": "ui_base",
         "theme": {
-            "name": "theme-dark",
+            "name": {
+                "name": "theme-dark",
+                "lightTheme": {
+                    "default": "#0094CE",
+                    "baseColor": "#0094CE",
+                    "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                    "edited": true,
+                    "reset": false
+                },
+                "darkTheme": {
+                    "default": "#097479",
+                    "baseColor": "#0071c5",
+                    "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                    "edited": true,
+                    "reset": false
+                },
+                "customTheme": {
+                    "name": "Untitled Theme 1",
+                    "default": "#4B7930",
+                    "baseColor": "#4B7930",
+                    "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                    "reset": false
+                },
+                "themeState": {
+                    "base-color": {
+                        "default": "#097479",
+                        "value": "#0071c5",
+                        "edited": true
+                    },
+                    "page-titlebar-backgroundColor": {
+                        "value": "#0071c5",
+                        "edited": false
+                    },
+                    "page-backgroundColor": {
+                        "value": "#111111",
+                        "edited": false
+                    },
+                    "page-sidebar-backgroundColor": {
+                        "value": "#333333",
+                        "edited": false
+                    },
+                    "group-textColor": {
+                        "value": "#129aff",
+                        "edited": false
+                    },
+                    "group-borderColor": {
+                        "value": "#555555",
+                        "edited": false
+                    },
+                    "group-backgroundColor": {
+                        "value": "#333333",
+                        "edited": false
+                    },
+                    "widget-textColor": {
+                        "value": "#eeeeee",
+                        "edited": false
+                    },
+                    "widget-backgroundColor": {
+                        "value": "#0071c5",
+                        "edited": false
+                    },
+                    "widget-borderColor": {
+                        "value": "#333333",
+                        "edited": false
+                    },
+                    "base-font": {
+                        "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                    }
+                },
+                "angularTheme": {
+                    "primary": "indigo",
+                    "accents": "blue",
+                    "warn": "red",
+                    "background": "grey"
+                }
+            },
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
+                "edited": false
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#0071c5",
+                "baseColor": "#097479",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
+                "edited": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
                 "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "reset": false
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
             },
             "themeState": {
                 "base-color": {
-                    "default": "#097479",
-                    "value": "#0071c5",
-                    "edited": true
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#0071c5",
+                    "value": "#0094CE",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -68,11 +140,11 @@
                     "edited": false
                 },
                 "page-sidebar-backgroundColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#129aff",
+                    "value": "#1bbfff",
                     "edited": false
                 },
                 "group-borderColor": {
@@ -88,7 +160,7 @@
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#0071c5",
+                    "value": "#0094ce",
                     "edited": false
                 },
                 "widget-borderColor": {
@@ -107,9 +179,11 @@
             }
         },
         "site": {
-            "name": "Welcome to Autre TechLab Services Admin UI",
+            "name": "Node-RED Dashboard",
             "hideToolbar": "false",
-            "allowSwipe": "true",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
                 "sx": 48,
@@ -120,8 +194,7 @@
                 "cy": 6,
                 "px": 0,
                 "py": 0
-            },
-            "allowTempTheme": "none"
+            }
         }
     },
     {
@@ -129,9 +202,7 @@
         "type": "ui_tab",
         "d": true,
         "name": "Minecraft Castle",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
+        "icon": "dashboard"
     },
     {
         "id": "39206a8b.c5f8a6",
@@ -160,8 +231,7 @@
         "tab": "89c7fde1.4503a",
         "order": 2,
         "disp": true,
-        "width": "6",
-        "collapse": false
+        "width": "6"
     },
     {
         "id": "e4b868dc.4bb848",
@@ -170,8 +240,7 @@
         "tab": "89c7fde1.4503a",
         "order": 1,
         "disp": true,
-        "width": "6",
-        "collapse": false
+        "width": "6"
     },
     {
         "id": "af8cc9b6.e919d8",
@@ -180,8 +249,7 @@
         "tab": "89c7fde1.4503a",
         "order": 3,
         "disp": true,
-        "width": "6",
-        "collapse": false
+        "width": "6"
     },
     {
         "id": "3e0dfd0b.2101e2",
@@ -190,8 +258,7 @@
         "tab": "89c7fde1.4503a",
         "order": 4,
         "disp": true,
-        "width": "6",
-        "collapse": false
+        "width": "6"
     },
     {
         "id": "2238b8ca.5fac08",
@@ -200,8 +267,7 @@
         "tab": "ffdb88b2.2989b8",
         "order": 1,
         "disp": true,
-        "width": "11",
-        "collapse": true
+        "width": "11"
     },
     {
         "id": "38e96ded.327fd2",
@@ -210,8 +276,7 @@
         "tab": "c7773ab.19623c8",
         "order": 3,
         "disp": true,
-        "width": "6",
-        "collapse": true
+        "width": "6"
     },
     {
         "id": "80d5ecc0.146198",
@@ -222,6 +287,7 @@
         "clientid": "",
         "usetls": false,
         "compatmode": false,
+        "protocolVersion": 4,
         "keepalive": "60",
         "cleansession": true,
         "birthTopic": "",
@@ -235,30 +301,10 @@
         "willPayload": ""
     },
     {
-        "id": "f11838f3.8b9978",
-        "type": "minecraft-ping-server",
-        "host": "sora.autretechlab.cloud",
-        "port": "25565"
-    },
-    {
-        "id": "bed43d85.afe46",
-        "type": "minecraft-ping-server",
-        "host": "localhost",
-        "port": "25565"
-    },
-    {
-        "id": "ddb8d230.19dce",
-        "type": "minecraft-ping-server",
-        "host": "localhost",
-        "port": "25566"
-    },
-    {
         "id": "ffdb88b2.2989b8",
         "type": "ui_tab",
         "name": "Minecraft Services",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
+        "icon": "dashboard"
     },
     {
         "id": "df038176.cdeed8",
@@ -267,8 +313,7 @@
         "tab": "ffdb88b2.2989b8",
         "order": 2,
         "disp": true,
-        "width": "13",
-        "collapse": true
+        "width": "13"
     },
     {
         "id": "73dc9105.eb3818",
@@ -276,9 +321,34 @@
         "botname": "MondeDeSora_Bot",
         "usernames": "autretechlab,LeCedrik",
         "clientId": "804765948585181225",
-        "store": "4cf44106.6f32f8",
+        "store": "",
         "log": "MondeDeSoraBot.log",
         "debug": true
+    },
+    {
+        "id": "c7773ab.19623c8",
+        "type": "ui_tab",
+        "name": "Robitics IDE Services",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "dc8b9f56.94918",
+        "type": "ui_group",
+        "name": "Actions",
+        "tab": "c7773ab.19623c8",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "69f9cdfa.8a1fa4",
+        "type": "ui_group",
+        "name": "Diagnostics",
+        "tab": "c7773ab.19623c8",
+        "order": 2,
+        "disp": true,
+        "width": "6"
     },
     {
         "id": "6f2ad847.2e845",
@@ -290,52 +360,10 @@
         "height": 1
     },
     {
-        "id": "4cf44106.6f32f8",
-        "type": "chatbot-context-store",
-        "name": "",
-        "contextStorage": "plain-file",
-        "contextParams": "{\"path\":\"/tmp\"}"
-    },
-    {
         "id": "8c10f895.751ef8",
         "type": "config",
         "name": "atl-services-node-red-flow",
         "region": "eu-central-1"
-    },
-    {
-        "id": "7260a864.fdfae8",
-        "type": "git-nodes-config",
-        "name": "ATL_Robotics_IDE_Projects",
-        "git": ""
-    },
-    {
-        "id": "c7773ab.19623c8",
-        "type": "ui_tab",
-        "name": "Robitics IDE Services",
-        "icon": "dashboard",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "dc8b9f56.94918",
-        "type": "ui_group",
-        "name": "Actions",
-        "tab": "c7773ab.19623c8",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "69f9cdfa.8a1fa4",
-        "type": "ui_group",
-        "name": "Diagnostics",
-        "tab": "c7773ab.19623c8",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false
     },
     {
         "id": "9244c093.ccefd",
@@ -348,7 +376,6 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "decouple": "false",
         "topic": "",
         "style": "",
         "onvalue": "Light",
@@ -379,7 +406,6 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "decouple": "false",
         "topic": "",
         "style": "",
         "onvalue": "On",
@@ -409,7 +435,6 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "decouple": "false",
         "topic": "/mc/nodeRed/CastleLight/0",
         "style": "",
         "onvalue": "On",
@@ -439,7 +464,6 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "decouple": "false",
         "topic": "",
         "style": "",
         "onvalue": "On",
@@ -469,7 +493,6 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "decouple": "false",
         "topic": "",
         "style": "",
         "onvalue": "On",
@@ -557,8 +580,6 @@
             "#e6e600",
             "#ca3838"
         ],
-        "seg1": "",
-        "seg2": "",
         "x": 331,
         "y": 146,
         "wires": []
@@ -583,8 +604,6 @@
             "#e6e600",
             "#ca3838"
         ],
-        "seg1": "",
-        "seg2": "",
         "x": 327,
         "y": 226,
         "wires": []
@@ -1186,21 +1205,6 @@
         ]
     },
     {
-        "id": "7ce01ab9.06af0c",
-        "type": "minecraft-ping-users",
-        "z": "c4618a05.51826",
-        "server": "f11838f3.8b9978",
-        "userid": "",
-        "do_not_ping": false,
-        "x": 300,
-        "y": 100,
-        "wires": [
-            [
-                "aa77ea69.e672b"
-            ]
-        ]
-    },
-    {
         "id": "68dcdd4c.90f21c",
         "type": "debug",
         "z": "c4618a05.51826",
@@ -1227,36 +1231,17 @@
                 "p": "payload"
             }
         ],
-        "repeat": "5",
+        "repeat": "",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 110,
+        "x": 100,
         "y": 160,
         "wires": [
-            [
-                "c389e088.b5817",
-                "7ce01ab9.06af0c"
-            ]
-        ]
-    },
-    {
-        "id": "c389e088.b5817",
-        "type": "minecraft-ping",
-        "z": "c4618a05.51826",
-        "server": "f11838f3.8b9978",
-        "x": 290,
-        "y": 200,
-        "wires": [
-            [
-                "95c80b9d.acd028",
-                "df26eb0.73f1d18",
-                "f45a8c3d.b7adb",
-                "fb4593e.7dd887"
-            ]
+            []
         ]
     },
     {
@@ -1329,8 +1314,6 @@
             "#e6e600",
             "#ca3838"
         ],
-        "seg1": "10",
-        "seg2": "15",
         "x": 690,
         "y": 240,
         "wires": []
@@ -1387,26 +1370,10 @@
         "xformat": "dd HH:mm",
         "interpolate": "linear",
         "nodata": "",
-        "dot": false,
         "ymin": "0",
         "ymax": "20",
         "removeOlder": "7",
-        "removeOlderPoints": "1000",
         "removeOlderUnit": "86400",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
         "outputs": 1,
         "x": 740,
         "y": 440,
@@ -1451,7 +1418,7 @@
         "type": "debug",
         "z": "c4618a05.51826",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1459,8 +1426,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 850,
-        "y": 380,
+        "x": 530,
+        "y": 180,
         "wires": []
     },
     {
@@ -1563,10 +1530,7 @@
         "x": 80,
         "y": 200,
         "wires": [
-            [
-                "c389e088.b5817",
-                "7ce01ab9.06af0c"
-            ]
+            []
         ]
     },
     {
@@ -1632,22 +1596,6 @@
         "wires": []
     },
     {
-        "id": "806fd151.8a3b4",
-        "type": "amazon cognito",
-        "z": "7a4eb111.0c1c8",
-        "aws": "8c10f895.751ef8",
-        "name": "",
-        "operation": "listUsers",
-        "x": 320,
-        "y": 160,
-        "wires": [
-            [
-                "ae229b6f.d10ff8",
-                "c92d3799.9ff108"
-            ]
-        ]
-    },
-    {
         "id": "f659e895.95f5d8",
         "type": "inject",
         "z": "7a4eb111.0c1c8",
@@ -1702,11 +1650,8 @@
         "order": 0,
         "width": 0,
         "height": 0,
-        "passthru": true,
         "label": "ros2 launch ide_bringup ide.launch.py",
-        "tooltip": "Start the Robitics IDE service (ros2 launch)",
         "color": "white",
-        "bgcolor": "red",
         "icon": "",
         "payload": "ros2 launch ide_bringup ide.launch.py",
         "payloadType": "str",
@@ -1728,11 +1673,8 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "passthru": false,
         "label": "ros2 run atl_blockly_ide_py_pkg atl_ide_webappserver_node",
-        "tooltip": "Start Robitics IDE Web server only",
         "color": "white",
-        "bgcolor": "red",
         "icon": "",
         "payload": "",
         "payloadType": "str",
@@ -1758,25 +1700,6 @@
         "x": 610,
         "y": 260,
         "wires": []
-    },
-    {
-        "id": "1195fdac.e9ba52",
-        "type": "pythonshell in",
-        "z": "7a4eb111.0c1c8",
-        "name": "ATL ROS2 Service status",
-        "pyfile": "/home/ubuntu/ATL_Robotics_IDE/saas_ops/atl_ros2_services.py",
-        "virtualenv": "/home/ubuntu/ATL_Robotics_IDE/saas_ops",
-        "continuous": false,
-        "stdInData": false,
-        "x": 310,
-        "y": 260,
-        "wires": [
-            [
-                "63040ac3.c4a564",
-                "fd061f08.3879d",
-                "c92d3799.9ff108"
-            ]
-        ]
     },
     {
         "id": "ecd8ccc4.06a14",
@@ -1835,8 +1758,6 @@
         "format": "<div ng-bind-html=\"msg.payload\"></div>\nLALALALAL",
         "storeOutMessages": true,
         "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "global",
         "x": 580,
         "y": 440,
         "wires": [
@@ -1873,12 +1794,45 @@
         "format": "<script src=\"https://autretechlab.cloud/js/verifier.js\"></script>\n<script src=\"https://autretechlab.cloud/js/userprofile.js\"></script>\n<div ng-bind-html=\"msg.payload\"></div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "global",
         "x": 1050,
         "y": 400,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "1195fdac.e9ba52",
+        "type": "pythonshell in",
+        "z": "7a4eb111.0c1c8",
+        "name": "ATL ROS2 Service status",
+        "pyfile": "/home/ubuntu/ATL_Robotics_IDE/saas_ops/atl_ros2_services.py",
+        "virtualenv": "/home/ubuntu/ATL_Robotics_IDE/saas_ops",
+        "continuous": false,
+        "stdInData": false,
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "63040ac3.c4a564",
+                "fd061f08.3879d",
+                "c92d3799.9ff108"
+            ]
+        ]
+    },
+    {
+        "id": "806fd151.8a3b4",
+        "type": "amazon cognito",
+        "z": "7a4eb111.0c1c8",
+        "aws": "8c10f895.751ef8",
+        "name": "",
+        "operation": "listUsers",
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "ae229b6f.d10ff8",
+                "c92d3799.9ff108"
+            ]
         ]
     }
 ]
