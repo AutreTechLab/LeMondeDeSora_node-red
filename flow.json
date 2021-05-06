@@ -1,5 +1,12 @@
 [
     {
+        "id": "3b71736d.0e8fb4",
+        "type": "tab",
+        "label": "UI Definition",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "c4618a05.51826",
         "type": "tab",
         "label": "Le Monde de Sora",
@@ -31,87 +38,13 @@
         "id": "99336c78.4c8ab",
         "type": "ui_base",
         "theme": {
-            "name": {
-                "name": "theme-dark",
-                "lightTheme": {
-                    "default": "#0094CE",
-                    "baseColor": "#0094CE",
-                    "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                    "edited": true,
-                    "reset": false
-                },
-                "darkTheme": {
-                    "default": "#097479",
-                    "baseColor": "#0071c5",
-                    "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                    "edited": true,
-                    "reset": false
-                },
-                "customTheme": {
-                    "name": "Untitled Theme 1",
-                    "default": "#4B7930",
-                    "baseColor": "#4B7930",
-                    "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                    "reset": false
-                },
-                "themeState": {
-                    "base-color": {
-                        "default": "#097479",
-                        "value": "#0071c5",
-                        "edited": true
-                    },
-                    "page-titlebar-backgroundColor": {
-                        "value": "#0071c5",
-                        "edited": false
-                    },
-                    "page-backgroundColor": {
-                        "value": "#111111",
-                        "edited": false
-                    },
-                    "page-sidebar-backgroundColor": {
-                        "value": "#333333",
-                        "edited": false
-                    },
-                    "group-textColor": {
-                        "value": "#129aff",
-                        "edited": false
-                    },
-                    "group-borderColor": {
-                        "value": "#555555",
-                        "edited": false
-                    },
-                    "group-backgroundColor": {
-                        "value": "#333333",
-                        "edited": false
-                    },
-                    "widget-textColor": {
-                        "value": "#eeeeee",
-                        "edited": false
-                    },
-                    "widget-backgroundColor": {
-                        "value": "#0071c5",
-                        "edited": false
-                    },
-                    "widget-borderColor": {
-                        "value": "#333333",
-                        "edited": false
-                    },
-                    "base-font": {
-                        "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                    }
-                },
-                "angularTheme": {
-                    "primary": "indigo",
-                    "accents": "blue",
-                    "warn": "red",
-                    "background": "grey"
-                }
-            },
+            "name": "theme-light",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
@@ -136,7 +69,7 @@
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#111111",
+                    "value": "#fafafa",
                     "edited": false
                 },
                 "page-sidebar-backgroundColor": {
@@ -148,15 +81,15 @@
                     "edited": false
                 },
                 "group-borderColor": {
-                    "value": "#555555",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "group-backgroundColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "widget-textColor": {
-                    "value": "#eeeeee",
+                    "value": "#111111",
                     "edited": false
                 },
                 "widget-backgroundColor": {
@@ -164,7 +97,7 @@
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "base-font": {
@@ -364,6 +297,12 @@
         "type": "config",
         "name": "atl-services-node-red-flow",
         "region": "eu-central-1"
+    },
+    {
+        "id": "bc9c6697.0a974",
+        "type": "minecraft-ping-server",
+        "host": "sora.autretechlab.cloud",
+        "port": "25565"
     },
     {
         "id": "9244c093.ccefd",
@@ -1209,7 +1148,7 @@
         "type": "debug",
         "z": "c4618a05.51826",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1241,7 +1180,9 @@
         "x": 100,
         "y": 160,
         "wires": [
-            []
+            [
+                "812e133d.f13098"
+            ]
         ]
     },
     {
@@ -1249,7 +1190,7 @@
         "type": "debug",
         "z": "c4618a05.51826",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1418,7 +1359,7 @@
         "type": "debug",
         "z": "c4618a05.51826",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1583,7 +1524,7 @@
         "type": "debug",
         "z": "c4618a05.51826",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1783,24 +1724,6 @@
         "wires": []
     },
     {
-        "id": "7b6a3deb.92fd84",
-        "type": "ui_template",
-        "z": "c4618a05.51826",
-        "group": "e4b868dc.4bb848",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<script src=\"https://autretechlab.cloud/js/verifier.js\"></script>\n<script src=\"https://autretechlab.cloud/js/userprofile.js\"></script>\n<div ng-bind-html=\"msg.payload\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "x": 1050,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "1195fdac.e9ba52",
         "type": "pythonshell in",
         "z": "7a4eb111.0c1c8",
@@ -1833,6 +1756,109 @@
                 "ae229b6f.d10ff8",
                 "c92d3799.9ff108"
             ]
+        ]
+    },
+    {
+        "id": "812e133d.f13098",
+        "type": "minecraft-ping",
+        "z": "c4618a05.51826",
+        "server": "bc9c6697.0a974",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "fb4593e.7dd887",
+                "aa77ea69.e672b",
+                "f45a8c3d.b7adb",
+                "df26eb0.73f1d18"
+            ]
+        ]
+    },
+    {
+        "id": "a1f8dec2.3b3cd8",
+        "type": "ui_template",
+        "z": "3b71736d.0e8fb4",
+        "group": "e4b868dc.4bb848",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "f87cbca3.5f66c"
+            ]
+        ]
+    },
+    {
+        "id": "f87cbca3.5f66c",
+        "type": "debug",
+        "z": "3b71736d.0e8fb4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8f137a9a.78db1",
+        "type": "inject",
+        "z": "3b71736d.0e8fb4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "a1f8dec2.3b3cd8"
+            ]
+        ]
+    },
+    {
+        "id": "7b6a3deb.92fd84",
+        "type": "ui_template",
+        "z": "c4618a05.51826",
+        "group": "e4b868dc.4bb848",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<script src=\"https://autretechlab.cloud/js/verifier.js\"></script>\n<script src=\"https://autretechlab.cloud/js/userprofile.js\"></script>\n<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 1050,
+        "y": 400,
+        "wires": [
+            []
         ]
     }
 ]
